@@ -1,3 +1,7 @@
-# Configuración de Suricata en Kubernetes
+# Configuring Suricata on Kubernetes
 
-Lo que deseamos es apoyarnos en el proyecto de [jasonish/suricata](https://github.com/jasonish/docker-suricata)
+What we want to do is to support each other in the project of [jasonish/suricata](https://github.com/jasonish/docker-suricata).
+
+We have the configuration files as follows:
+
+- 
