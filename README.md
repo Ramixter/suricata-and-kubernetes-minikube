@@ -9,3 +9,7 @@ We have the configuration files as follows:
 
 To create the deployment with the configuration file [``suricata-deployment.yaml``](suricata-deployment.yaml) on our machine we use the following:
 
+``` bash
+kubectl create -f nombre_del_archivo.yaml
+```
+
