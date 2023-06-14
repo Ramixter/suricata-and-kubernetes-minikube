@@ -20,3 +20,9 @@ If we want to see the Suricata logs, we can use the following command:
 ``` bash
 kubectl logs <POD_NAME>
 ```
+
+o
+
+``` bash
+kubectl logs -f <POD_NAME>
+```
