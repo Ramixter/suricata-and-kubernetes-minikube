@@ -10,6 +10,13 @@ We have the configuration files as follows:
 To create the deployment with the configuration file [``suricata-deployment.yaml``](suricata-deployment.yaml) on our machine we use the following:
 
 ``` bash
-kubectl create -f nombre_del_archivo.yaml
+kubectl create -f suricata-deployment.yaml
 ```
 
+> This will create a deployment with a single pod running the Suricata container with the necessary network capabilities and privileges.
+
+If we want to see the Suricata logs, we can use the following command:
+
+``` bash
+kubectl logs <POD_NAME>
+```
