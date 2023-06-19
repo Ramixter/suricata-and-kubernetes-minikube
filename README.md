@@ -95,6 +95,11 @@ kubectl exec -it ubuntu -- sh
 ping <IP_POD_ADDR>
 ```
 
+We will be able to see the logs that have been collected with suricata inside a ``fast.log`` file generated in our directory that we have configured in ``default-log-dir`` (eg: ``/var/log/suricata``).
+
+``` bash
+cat /var/log/suricata/fast.log
+```
 
 
 
