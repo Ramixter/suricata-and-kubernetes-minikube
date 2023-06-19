@@ -33,5 +33,5 @@ Now in the suricata's part, what we are going to do is to make some slight confi
 kubectl exec -it <POD_NAME> -- sh
 ```
 
-Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``suricata-deployment.yaml``](suricata-deployment.yaml) file to perform a ping.
+Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
 
