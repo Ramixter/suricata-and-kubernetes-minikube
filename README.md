@@ -2,6 +2,8 @@
 
 What we want to do is to support each other in the project of [jasonish/suricata](https://github.com/jasonish/docker-suricata).
 
+## Kubernetes configuration
+
 We have the configuration files as follows:
 
 - [suricata-deployment.yaml](suricata-deployment.yaml)
@@ -26,3 +28,5 @@ o
 ``` bash
 kubectl logs -f <POD_NAME>
 ```
+
+## Suircata configuration
