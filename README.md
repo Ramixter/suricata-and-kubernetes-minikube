@@ -33,5 +33,22 @@ Now in the suricata's part, what we are going to do is to make some slight confi
 kubectl exec -it <POD_NAME> -- sh
 ```
 
+Inside suricata we are going to create a small rule to see if it is configured and working. In suricata we are going to create a small rule to see if it is configured and working. We will have to modify the configuration of ``/etc/suricata/suricata.yaml`` to make the relevant changes.
+
+For example:
+
+- In the ``default-rule-path`` section is where we are going to generate our rules. We can change this path if we wish.
+  ``` yaml
+  default-rule-path: /var/lib/suricata/rules
+  ```
+
+
 Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
+
+``` bash
+kubectl apply -f ubuntupod.yaml
+```
+
+
+
 
