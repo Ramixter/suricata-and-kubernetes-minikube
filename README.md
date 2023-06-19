@@ -78,6 +78,14 @@ Once inside, you are going to set up a basic rule to check that meerkat responds
 kubectl apply -f ubuntupod.yaml
 ```
 
+``` bash
+kubectl exec -it ubuntu -- sh
+```
+
+``` bash
+ping <IP_POD_ADDR>
+```
+
 
 
 
