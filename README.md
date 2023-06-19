@@ -77,7 +77,7 @@ For example:
    ```
 
    > ``` text
-   > suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/my-rules -i etho
+   > suricata -c <CONFIG_SURICATA> -s <RULES_SURICATA> -i <INTERFACE>
    > ```
    
 
