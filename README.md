@@ -30,3 +30,8 @@ kubectl logs -f <POD_NAME>
 ```
 
 ## Suircata configuration
+
+Now in the "meerkat" part, what we are going to do is to make some slight configurations in order to check that it works correctly.
+
+
+
