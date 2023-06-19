@@ -26,6 +26,6 @@ and here we will have the IP address that we are going to be working with for th
 
 ## Suircata configuration
 
-Now in the "meerkat" part, what we are going to do is to make some slight configurations in order to check that it works correctly.
+Now in the suricata's part, what we are going to do is to make some slight configurations in order to check that it works correctly.
 
 
