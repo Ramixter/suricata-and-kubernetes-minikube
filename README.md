@@ -22,10 +22,16 @@ Once we have our deployment active, let's see what its IP address is:
 ``` bash
 kubectl get pod <POD_NAME> -o wide 
 ```
+
 and here we will have the IP address that we are going to be working with for the moment to test using ICMP packets with PING.
 
 ## Suircata configuration
 
 Now in the suricata's part, what we are going to do is to make some slight configurations in order to check that it works correctly.
 
+``` bash
+kubectl exec -it <POD_NAME> -- sh
+```
+
+Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``suricata-deployment.yaml``](suricata-deployment.yaml) file to perform a ping.
 
