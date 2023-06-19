@@ -17,21 +17,15 @@ kubectl create -f suricata-deployment.yaml
 
 > This will create a deployment with a single pod running the Suricata container with the necessary network capabilities and privileges.
 
-If we want to see the Suricata logs, we can use the following command:
+Once we have our deployment active, let's see what its IP address is:
 
 ``` bash
-kubectl logs <POD_NAME>
+kubectl get pod <POD_NAME> -o wide 
 ```
-
-o
-
-``` bash
-kubectl logs -f <POD_NAME>
-```
+and here we will have the IP address that we are going to be working with for the moment to test using ICMP packets with PING.
 
 ## Suircata configuration
 
 Now in the "meerkat" part, what we are going to do is to make some slight configurations in order to check that it works correctly.
-
 
 
