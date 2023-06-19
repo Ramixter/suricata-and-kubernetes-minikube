@@ -64,7 +64,12 @@ For example:
         - interface: eth0
       ```
       
-3. We create a file with our own rules for "meerkat" inside our ``default-rule-path`` (eg: ``my-rules``). In this file we will create our rules, a very basic and easy to implement rule would be for ICMP packets:
+3. We create a file with our own rules for Suricata inside our ``default-rule-path`` (eg: ``my-rules``). In this file we will create our rules, a very basic and easy to implement rule would be for ICMP packets:
+   
+   ``` yaml
+   af-packet:
+     - interface: eth0
+   ```
 
    
 
