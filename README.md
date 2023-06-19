@@ -70,7 +70,11 @@ For example:
    alert icmp any any -> any any (msg: "ICMP Packet found"; sid:2000001; rev:1;)
    ```
    
-3. 
+3. We proceed to run the suricata service by defining the configuration file, the rules and the interface:
+
+   ``` text
+   suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/my-rules -i etho
+   ```
    
 
 Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
