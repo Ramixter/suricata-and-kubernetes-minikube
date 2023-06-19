@@ -63,7 +63,9 @@ For example:
     af-packet:
       - interface: eth0
     ```
-2. Creamos
+2. We create a file with our own rules for "meerkat" inside our ``default-rule-path`` (eg: ``my-rules``). In this file we will create our rules, a very basic and easy to implement rule would be for ICMP packets:
+
+   
 
 Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
 
