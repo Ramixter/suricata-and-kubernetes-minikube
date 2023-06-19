@@ -77,7 +77,7 @@ For example:
    ```
 
    > ``` text
-   > suricata -c <CONFIG_SURICATA> -s <RULES_SURICATA> -i <INTERFACE>
+   > suricata -c <CONFIG_SURICATA> -i <INTERFACE>
    > ```
    
 
