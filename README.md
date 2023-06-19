@@ -47,12 +47,21 @@ For example:
   default-log-dir: /var/log/suricata
   ```
 
-- It is also important to look at the ``af-packet`` section under ``- interface``, to configure the interface where suricata will perform the analysis.
+- The ``rule-files`` section is where we define the files we have with our rules that will be applied in suricata.
+
+  ``` yaml
+  rule-files:
+    - suricata.rules # suricata rules
+    - my-rules # my rules
+  ```
+
+- It is also important to look at the ``af-packet`` section under ``- interface:``, to configure the interface where suricata will perform the analysis.
 
   ``` yaml
   af-packet:
     - interface: eth0
   ```
+
 
 Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
 
