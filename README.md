@@ -57,13 +57,14 @@ For example:
         - my-rules # my rules
       ```
 
-  - It is also important to look at the ``af-packet`` section under ``- interface:``, to configure the interface where suricata will perform the analysis.
-  
-    ``` yaml
-    af-packet:
-      - interface: eth0
-    ```
-2. We create a file with our own rules for "meerkat" inside our ``default-rule-path`` (eg: ``my-rules``). In this file we will create our rules, a very basic and easy to implement rule would be for ICMP packets:
+   - It is also important to look at the ``af-packet`` section under ``- interface:``, to configure the interface where suricata will perform the analysis.
+     
+      ``` yaml
+      af-packet:
+        - interface: eth0
+      ```
+      
+3. We create a file with our own rules for "meerkat" inside our ``default-rule-path`` (eg: ``my-rules``). In this file we will create our rules, a very basic and easy to implement rule would be for ICMP packets:
 
    
 
