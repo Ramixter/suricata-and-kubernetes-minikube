@@ -73,7 +73,7 @@ For example:
 3. We proceed to run the suricata service by defining the configuration file, the rules and the interface:
 
    ``` text
-   suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/my-rules -i eth0
+   suricata -c /etc/suricata/suricata.yaml -i eth0
    ```
 
    > ``` text
