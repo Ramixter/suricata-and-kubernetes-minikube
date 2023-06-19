@@ -75,6 +75,10 @@ For example:
    ``` text
    suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/my-rules -i etho
    ```
+
+   > ``` text
+   > suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/my-rules -i etho
+   > ```
    
 
 Once inside, you are going to set up a basic rule to check that meerkat responds to us. For this we are going to use the Ubunu POD with the [``ubuntupod.yaml``](ubuntupod.yaml) file to perform a ping.
